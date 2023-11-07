@@ -1,14 +1,14 @@
 {
-    "name": "PlayerControls",
+    "name": "Player Controls",
     "maps": [
         {
-            "name": "PlayerMovement",
-            "id": "a1723754-2473-48a1-b717-b0954bdd7ab9",
+            "name": "Player Movement",
+            "id": "08a73c3f-4fbc-488f-926c-4bcaba01cfcd",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "PassThrough",
-                    "id": "de3ef303-caf4-454b-a2fe-95c2bc3dd995",
+                    "id": "29819a9c-e020-4815-8d67-f9fda20b32f3",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -18,7 +18,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "947dc3a0-fcea-45fb-af8f-b6d54772f27c",
+                    "id": "50e1cc61-3f5b-454d-bad5-de769997d830",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -29,7 +29,7 @@
                 },
                 {
                     "name": "Left Stick",
-                    "id": "b7cd1e31-a052-48fb-984c-ab47ac94a6e9",
+                    "id": "b400a14a-7eef-47ce-962c-68643db6e7ea",
                     "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "e8954953-8d23-433b-b3a2-c37f69deaede",
+                    "id": "6c655378-7adb-4d28-93ff-89ca161aa50f",
                     "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "727063f1-2582-4aa0-88b8-278c3cb089c1",
+                    "id": "3fcac72a-75d1-4fbd-9176-2cf1caeb9129",
                     "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +62,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "2ef91ab4-00a9-4f05-9096-1c60335f5471",
+                    "id": "b89b623c-4d20-46e0-a959-543f5cfdea0f",
                     "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
@@ -73,7 +73,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "3a9f3466-7711-43de-9f53-eb9a5d7080d0",
+                    "id": "8d9e0f17-8f30-4774-b0a8-423182d96332",
                     "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",

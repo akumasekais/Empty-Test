@@ -19,8 +19,32 @@ namespace TM
         {
             base.Update();
 
+            // IF WE DO NTO OWN THIS GAMEOBJECT, WE DO NOT CONTROL OR EDIT IT!
+            if (!IsOwner)
+                return;
+            
             //HANDLE MOVEMENT
             playerlocomotionManager.HandleAllMovement();
+        }
+
+        protected override void LateUpdate()
+        {
+            if (!IsOwner)
+                return;
+
+            base.LateUpdate();
+            
+            PlayerCamera.instance.HandleAllCameraActions();
+        }
+        public override void OnNetworkSpawn()
+        {
+            base.OnNetworkSpawn();
+
+            // IF THIS IS THE PLAYER OBJECT OWNED BY THIS CLIENT
+            if (IsOwner)
+            {
+                PlayerCamera.instance.player = this;
+            }
         }
     }
 
