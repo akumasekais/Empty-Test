@@ -33,9 +33,12 @@ namespace TM
 
         public void HandleAllCameraActions()
         {
+
+
             if (player != null) 
             {
                 //  FOLLOW THE PLAYER
+                FollowTarget();
                 // ROTATE AROUND THE PLAYER
                 // COLLIDE WITH OBJECTS
             }
