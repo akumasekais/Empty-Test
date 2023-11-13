@@ -6,25 +6,25 @@ namespace TM
 {
     public class PlayerManager : CharacterManager
     {
-        PlayerLocomotionManager playerlocomotionManager;
+        PlayerLocomotionManager playerLocomotionManager;
         protected override void Awake()
         {
             base.Awake();
 
             // DO MORE STUFF, ONLY FOR THE PLAYER
 
-            playerlocomotionManager = GetComponent<PlayerLocomotionManager>();
+            playerLocomotionManager = GetComponent<PlayerLocomotionManager>();
         }
         protected override void Update()
         {
             base.Update();
 
-            // IF WE DO NTO OWN THIS GAMEOBJECT, WE DO NOT CONTROL OR EDIT IT!
+            // IF WE DO NOT OWN THIS GAMEOBJECT, WE DO NOT CONTROL OR EDIT IT!
             if (!IsOwner)
                 return;
             
             //HANDLE MOVEMENT
-            playerlocomotionManager.HandleAllMovement();
+            playerLocomotionManager.HandleAllMovement();
         }
 
         protected override void LateUpdate()

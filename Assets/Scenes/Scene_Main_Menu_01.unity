@@ -702,6 +702,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910603325}
   m_CullTransparentMesh: 1
+--- !u!20 &1046607377 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7842302434686839707, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
+  m_PrefabInstance: {fileID: 5450492495074252144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1132987170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2026204089314525986, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
+  m_PrefabInstance: {fileID: 5450492495074252144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1132987173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132987170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035459d972074264da7a8a08e2feff41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cameraObject: {fileID: 1046607377}
 --- !u!1 &1252097807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,14 +1381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 5860544412579258463, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: -1668227071853419150, guid: 7836ff87ae047d64e899bbbbc45bea24, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5860544412579258463, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2026204089314525986, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1132987173}
   m_SourcePrefab: {fileID: 100100000, guid: c8945b07b3aa83344ba0dfadf0bf95f2, type: 3}
 --- !u!1001 &6361007835369769461
 PrefabInstance:

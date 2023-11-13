@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 4252980704135287660}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5860544412579258463
 MonoBehaviour:
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035459d972074264da7a8a08e2feff41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: -1668227071853419150, guid: 7836ff87ae047d64e899bbbbc45bea24, type: 3}
   cameraObject: {fileID: 7842302434686839707}
 --- !u!1 &8164226770618027790
 GameObject:

@@ -12,7 +12,7 @@ namespace TM
        
         [Header("Camera Settings")]
         private Vector3 cameraVelocity;
-        private float cameraSmoothSpeed = 1;
+        private float cameraSmoothSpeed = 1; //THE BIGGER THIS NUMBER. THE LONGER FOR THE CAMERA TO REACH ITS POSITION DURING MOVEMENT
 
         private void Awake()
         {
@@ -33,12 +33,10 @@ namespace TM
 
         public void HandleAllCameraActions()
         {
-
-
             if (player != null) 
             {
-                //  FOLLOW THE PLAYER
                 FollowTarget();
+                //  FOLLOW THE PLAYER
                 // ROTATE AROUND THE PLAYER
                 // COLLIDE WITH OBJECTS
             }
@@ -47,9 +45,7 @@ namespace TM
         }
         private void FollowTarget()
         {
-            Vector3 targetCameraPosition = Vector3.SmoothDamp
-                (transform.position, player.transform.position, 
-                ref cameraVelocity, cameraSmoothSpeed, Time.deltaTime);  
+            Vector3 targetCameraPosition = Vector3.SmoothDamp(transform.position, player.transform.position, ref cameraVelocity, cameraSmoothSpeed, Time.deltaTime);  
             transform.position = targetCameraPosition;
         }
 
